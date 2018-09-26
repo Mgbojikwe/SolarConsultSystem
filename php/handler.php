@@ -10,6 +10,7 @@ require_once './vendor/autoload.php';
 
 use FormGuide\Handlx\FormHandler;
 
+
 $pp = new FormHandler(); 
 
 $validator = $pp->getValidator();
@@ -20,6 +21,6 @@ $validator->field('message')->maxLength(6000);
 
 
 
-$pp->sendEmailTo('mgbojikwechukwuebuka@gmail.com'); // ← Your email here
+$pp->sendEmailTo('info@solarconsult.com'); // ← Your email here
 
 echo $pp->process($_POST);
